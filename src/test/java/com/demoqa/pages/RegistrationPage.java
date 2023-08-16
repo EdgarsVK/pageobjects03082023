@@ -127,6 +127,7 @@ public class RegistrationPage {
         return this;
     }
 
-    public void verifyResult(RegistrationPageViewModel registrationPageViewModel) {
+    public void verifyResult(RegistrationPageViewModel  registrationPageViewModel) {
+
     }
 }
