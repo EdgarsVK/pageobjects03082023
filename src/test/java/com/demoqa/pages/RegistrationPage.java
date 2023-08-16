@@ -1,6 +1,7 @@
 package com.demoqa.pages;
 
 import com.codeborne.selenide.SelenideElement;
+import com.demoqa.data.viewModel.RegistrationPageViewModel;
 import com.demoqa.pages.components.CalendarComponent;
 import com.demoqa.pages.components.ResultsModal;
 
@@ -13,7 +14,6 @@ public class RegistrationPage {
     CalendarComponent calendarComponent = new CalendarComponent();
     ResultsModal resultsModal = new ResultsModal();
 
-    // Selenide elements / locators / etc
     SelenideElement firstNameInput = $("#firstName"),
                     lastNameInput = $("#lastName"),
                     userEmailInput = $("#userEmail"),
@@ -125,5 +125,8 @@ public class RegistrationPage {
         resultsModal.verifyResult(key, value);
 
         return this;
+    }
+
+    public void verifyResult(RegistrationPageViewModel registrationPageViewModel) {
     }
 }
